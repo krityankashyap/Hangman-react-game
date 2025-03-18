@@ -1,19 +1,15 @@
 import Button from "../Button/Button";
 import TextInput from "../TextInput/TextInput";
 
-function TextInputForm(){
-   
+function TextInputForm({handleFormSubmit , handleTextInputChange}){
 
-  function handleFormSubmit(event){
-    event.preventDefault();             {/* used to prevent default property of form tag i.e, refresh the page */}
-    console.log("Form submitted")
-  }
   return (
     <form onSubmit={handleFormSubmit}>
     <div>
       <TextInput 
         label = {"Enter ur words or phrases..."}
         placeholder={"Enter ur words or phrases here...!"}
+        onChangeHandler={handleTextInputChange}
         />
     </div>
 
