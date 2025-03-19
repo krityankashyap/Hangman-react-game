@@ -1,6 +1,6 @@
 import getButtonStyling from "./getButtonStyling";
 
-function Button({ text , onClickHandler , styleType="primary" , type="submit"}){
+function Button({ text , onClickHandler , styleType="primary" , type="button"}){
 
   console.log(text)
   return (
