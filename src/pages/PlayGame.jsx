@@ -1,7 +1,7 @@
 import { Link, useSearchParams } from "react-router-dom"
 
-const [ searchParams ] = useSearchParams();
-console.log(searchParams.get("text"));
+// const [ searchParams ] = useSearchParams();
+// console.log(searchParams.get("text"));
 
 function PlayGame(){
 

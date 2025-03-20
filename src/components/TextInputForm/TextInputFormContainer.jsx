@@ -15,7 +15,7 @@ function TextInputFormContainer(){
 
     if(value){
       // if we have something in value then we want to go on play page
-      navigate(`/play?text=${value}`)
+      navigate(`/play/text=${value}`)
      }
   }
 
