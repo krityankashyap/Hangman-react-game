@@ -28,7 +28,10 @@ function PlayGame(){
  return (
   <>
    <h>Play Game</h>
-   <Maskedtext text={state.wordSelected} guessedLetters={guessedLetters} />
+   {state?.wordSelected && (
+
+    <> 
+      <Maskedtext text={state.wordSelected} guessedLetters={guessedLetters} />
   <div>
   <LetterButtons text={state.wordSelected} guessedLetters={guessedLetters} onLetterClick={handleLetterClick} /> 
   </div>
@@ -36,6 +39,16 @@ function PlayGame(){
   <div>
     <HangMan steps={step} />
   </div>
+    
+  </>
+   )}
+
+   <div>
+
+   <Link to='/'>Home </Link>
+   </div>
+   
+   
    
    <Link to="/start" className="text-green-500 px-4 py-2">Start-Game</Link>
   

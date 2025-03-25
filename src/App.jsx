@@ -3,6 +3,7 @@ import './App.css'
 import TextInputFormContainer from './components/TextInputForm/TextInputFormContainer'
 import StartGame from './pages/Startgame'
 import PlayGame from './pages/PlayGame'
+import Home from './pages/Home'
 
 function App() {
 
@@ -10,6 +11,7 @@ function App() {
  <Routes>
   <Route path='/start' element={<StartGame />}/>
   <Route path='/play' element={<PlayGame />}/>
+  <Route path='/' element={<Home />} /> 
  </Routes>
   )
 }
